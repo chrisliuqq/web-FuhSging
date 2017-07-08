@@ -71,12 +71,13 @@
                 <h2>加工流程 Process</h2>
                 <div class="col-left">
                     <ul class="process-menu">
-                        <li><a href="javascript:void(0);" class="process-btn menu-01 active" title="螺桿加工程序"></a></li>
-                        <li><a href="javascript:void(0);" class="process-btn menu-02" title="料管加工程序"></a></li>
+                        <li><a href="javascript:void(0);" class="process-btn menu-01 active" title="螺桿加工程序" data-type="type-1"></a></li>
+                        <li><a href="javascript:void(0);" class="process-btn menu-02" title="料管加工程序" data-type="type-2"></a></li>
                     </ul>
                 </div>
-                <div class="col-right text-center">
-                    <img src="assets/img/process-01.png" />
+                <div class="col-right text-center process-img">
+                    <img class="type-1" src="assets/img/process-01.png" />
+                    <img class="type-2" src="assets/img/process-02.png" />
                 </div>
             </div>
 
@@ -167,7 +168,21 @@
                     $("#lightbox").fadeOut();
                     $("#overlap").fadeOut();
                 });
+
+                $(".process-btn").click(function() {
+                    $(".process-btn").removeClass("active");
+                    $(this).addClass("active");
+                    var type = $(this).data("type");
+                    processMenu(type);
+                });
+
+                processMenu("type-1");
             });
+
+            function processMenu(type) {
+                $(".process-img img").hide();
+                $(".process-img").find("." + type).show();
+            }
         </script>
 
 
