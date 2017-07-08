@@ -180,15 +180,17 @@
                 $(".lightbox").click(function(e) {
                     e.preventDefault();
                     var url = $(this).attr("href");
+                    var title = $(this).find("p").text();
 
                     if ($('#lightbox').length < 1) {
                         $('<div id="overlap"/>').appendTo('body');
-                        $('<div id="lightbox"><i id="lightbox-close-btn" class="fa fa-times"></i><img src="' + url + '" /></div>').appendTo( $('#overlap') );
+                        $('<div id="lightbox"><i id="lightbox-close-btn" class="fa fa-times"></i><img src="' + url + '" /><p class="title"></p></div>').appendTo( $('#overlap') );
                     }
                     else {
                         $("#lightbox img").attr("src", url);
                     }
 
+                    $("#lightbox .title").text(title);
                     $("#lightbox").fadeIn();
                     $("#overlap").fadeIn();
 
