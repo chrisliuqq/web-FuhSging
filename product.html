@@ -22,87 +22,117 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     </head>
     <body class="service">
-
-        <header id="header">
-            <div id="language-bar">
-                <div class="content">
-                    <a href="product.html">中文</a> /
-                    <a href="product-en.html">EN</a> /
-                    <a href="product-jp.html">JP</a>
+        <div id="app">
+            <header id="header">
+                <div id="language-bar">
+                    <div class="content">
+                        <a href="product.html">中文</a> /
+                        <a href="product.html?lang=en">EN</a> /
+                        <a href="product.html?lang=jp">JP</a>
+                    </div>
                 </div>
+                <nav id="nav">
+                    <div class="content">
+                        <a id="brand" href=".">
+                            <img src="assets/img/logo.png" />
+                        </a>
+                        <a id="navbar-toggle"><i class="fa fa-bars fa-3x"></i></a>
+                        <ul id="navbar">
+                            <li><a href="index.html">
+                                <span>HOME</span>
+                                <span>首頁</span>
+                            </a></li>
+                            <li><a href="service.html">
+                                <span>SERVICE</span>
+                                <span>服務項目</span>
+                            </a></li>
+                            <li><a href="product.html">
+                                <span>PRODUCT</span>
+                                <span>產品介紹</span>
+                            </a></li>
+                            <li><a href="process.html">
+                                <span>PROCESS</span>
+                                <span>加工流程</span>
+                            </a></li>
+                            <li><a href="contact.html">
+                                <span>CONTACT</span>
+                                <span>聯絡我們</span>
+                            </a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+            <div id="content-wrapper">
+
+                <div class="top-bg product"></div>
+
+                <div id="section-product" class="content">
+                    <h2>產品介紹 Product</h2>
+                    <div class="col-left">
+                        <ul class="product-menu">
+                            <li><a href="javascript:void(0);" class="product-btn menu-01 active" title="押出機料管和螺桿" data-type="type-1"></a></li>
+                            <li><a href="javascript:void(0);" class="product-btn menu-02" title="押出機料管和螺桿" data-type="type-2"></a></li>
+                            <li><a href="javascript:void(0);" class="product-btn menu-03" title="押出機料管和螺桿" data-type="type-3"></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-right text-center">
+                        <ul class="product-list">
+                            <li class="type-1"><a href="assets/img/product/1-01.jpg" class="lightbox"><img src="assets/img/product/1-01.jpg" /><p v-html="lang[clang]['product-1-01-title']"></p></a></li>
+                            <li class="type-1"><a href="assets/img/product/1-02.jpg" class="lightbox"><img src="assets/img/product/1-02.jpg" /><p v-html="lang[clang]['product-1-02-title']"></p></a></li>
+                            <li class="type-1"><a href="assets/img/product/1-03.jpg" class="lightbox"><img src="assets/img/product/1-03.jpg" /><p v-html="lang[clang]['product-1-03-title']"></p></a></li>
+                            <li class="type-1"><a href="assets/img/product/1-04.jpg" class="lightbox"><img src="assets/img/product/1-04.jpg" /><p v-html="lang[clang]['product-1-04-title']"></p></a></li>
+                            <li class="type-1"><a href="assets/img/product/1-05.jpg" class="lightbox"><img src="assets/img/product/1-05.jpg" /><p v-html="lang[clang]['product-1-05-title']"></p></a></li>
+                            <li class="type-1"><a href="assets/img/product/1-06.jpg" class="lightbox"><img src="assets/img/product/1-06.jpg" /><p v-html="lang[clang]['product-1-06-title']"></p></a></li>
+                            <li class="type-1"><a href="assets/img/product/1-07.jpg" class="lightbox"><img src="assets/img/product/1-07.jpg" /><p v-html="lang[clang]['product-1-07-title']"></p></a></li>
+                            <li class="type-1"><a href="assets/img/product/1-08.jpg" class="lightbox"><img src="assets/img/product/1-08.jpg" /><p v-html="lang[clang]['product-1-08-title']"></p></a></li>
+                            <li class="type-1"><a href="assets/img/product/1-09.jpg" class="lightbox"><img src="assets/img/product/1-09.jpg" /><p v-html="lang[clang]['product-1-09-title']"></p></a></li>
+                            <li class="type-1"><a href="assets/img/product/1-10.jpg" class="lightbox"><img src="assets/img/product/1-10.jpg" /><p v-html="lang[clang]['product-1-10-title']"></p></a></li>
+                            <li class="type-1"><a href="assets/img/product/1-11.jpg" class="lightbox"><img src="assets/img/product/1-11.jpg" /><p v-html="lang[clang]['product-1-11-title']"></p></a></li>
+                            <li class="type-1"><a href="assets/img/product/1-12.jpg" class="lightbox"><img src="assets/img/product/1-12.jpg" /><p v-html="lang[clang]['product-1-12-title']"></p></a></li>
+                            <li class="type-1"><a href="assets/img/product/1-13.jpg" class="lightbox"><img src="assets/img/product/1-13.jpg" /><p v-html="lang[clang]['product-1-13-title']"></p></a></li>
+                            <li class="type-1"><a href="assets/img/product/1-14.jpg" class="lightbox"><img src="assets/img/product/1-14.jpg" /><p v-html="lang[clang]['product-1-14-title']"></p></a></li>
+                            <li class="type-1"><a href="assets/img/product/1-14.jpg" class="lightbox"><img src="assets/img/product/1-15.jpg" /><p v-html="lang[clang]['product-1-15-title']"></p></a></li>
+
+                            <li class="type-2"><a href="assets/img/product/2-01.jpg" class="lightbox"><img src="assets/img/product/2-01.jpg" /><p v-html="lang[clang]['product-2-01-title']"></p></a></li>
+                            <li class="type-2"><a href="assets/img/product/2-02.jpg" class="lightbox"><img src="assets/img/product/2-02.jpg" /><p v-html="lang[clang]['product-2-02-title']"></p></a></li>
+                            <li class="type-2"><a href="assets/img/product/2-03.jpg" class="lightbox"><img src="assets/img/product/2-03.jpg" /><p v-html="lang[clang]['product-2-03-title']"></p></a></li>
+                            <li class="type-2"><a href="assets/img/product/2-04.jpg" class="lightbox"><img src="assets/img/product/2-04.jpg" /><p v-html="lang[clang]['product-2-04-title']"></p></a></li>
+                            <li class="type-2"><a href="assets/img/product/2-05.jpg" class="lightbox"><img src="assets/img/product/2-05.jpg" /><p v-html="lang[clang]['product-2-05-title']"></p></a></li>
+                            <li class="type-2"><a href="assets/img/product/2-06.jpg" class="lightbox"><img src="assets/img/product/2-06.jpg" /><p v-html="lang[clang]['product-2-06-title']"></p></a></li>
+                            <li class="type-2"><a href="assets/img/product/2-07.jpg" class="lightbox"><img src="assets/img/product/2-07.jpg" /><p v-html="lang[clang]['product-2-07-title']"></p></a></li>
+                            <li class="type-2"><a href="assets/img/product/2-08.jpg" class="lightbox"><img src="assets/img/product/2-08.jpg" /><p v-html="lang[clang]['product-2-08-title']"></p></a></li>
+                            <li class="type-2"><a href="assets/img/product/2-09.jpg" class="lightbox"><img src="assets/img/product/2-09.jpg" /><p v-html="lang[clang]['product-2-09-title']"></p></a></li>
+                            <li class="type-2"><a href="assets/img/product/2-10.jpg" class="lightbox"><img src="assets/img/product/2-10.jpg" /><p v-html="lang[clang]['product-2-10-title']"></p></a></li>
+
+                            <li class="type-3"><a href="assets/img/product/3-01.jpg" class="lightbox"><img src="assets/img/product/3-01.jpg" /><p v-html="lang[clang]['product-3-01-title']"></p></a></li>
+                            <li class="type-3"><a href="assets/img/product/3-02.jpg" class="lightbox"><img src="assets/img/product/3-02.jpg" /><p v-html="lang[clang]['product-3-02-title']"></p></a></li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
-            <nav id="nav">
-                <div class="content">
-                    <a id="brand" href=".">
-                        <img src="assets/img/logo.png" />
-                    </a>
-                    <a id="navbar-toggle"><i class="fa fa-bars fa-3x"></i></a>
-                    <ul id="navbar">
-                        <li><a href="index.html">
-                            <span>HOME</span>
-                            <span>首頁</span>
-                        </a></li>
-                        <li><a href="service.html">
-                            <span>SERVICE</span>
-                            <span>服務項目</span>
-                        </a></li>
-                        <li><a href="product.html">
-                            <span>PRODUCT</span>
-                            <span>產品介紹</span>
-                        </a></li>
-                        <li><a href="process.html">
-                            <span>PROCESS</span>
-                            <span>加工流程</span>
-                        </a></li>
-                        <li><a href="contact.html">
-                            <span>CONTACT</span>
-                            <span>聯絡我們</span>
-                        </a></li>
-                    </ul>
+
+            <footer id="footer">
+                <div class="footer-bg"></div>
+                <div class="footer">
+                    <div class="content">
+                        <div class="copyright">© 2015 Fuh Shing Machine Co., Ltd.  All rights reserved.</div>
+                        <ul class="footer-nav">
+                            <li><a href="index.html">HOME</a></li>
+                            <li>|</li>
+                            <li><a href="service.html">SERVICE</a></li>
+                            <li>|</li>
+                            <li><a href="product.html">PRODUCT</a></li>
+                            <li>|</li>
+                            <li><a href="process.html">PROCESS</a></li>
+                            <li>|</li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </nav>
-        </header>
-
-        <div id="content-wrapper">
-
-            <div class="top-bg product"></div>
-
-            <div id="section-product" class="content">
-                <h2>產品介紹 Product</h2>
-                <div class="col-left">
-                    <ul class="product-menu">
-                        <li><a href="javascript:void(0);" class="product-btn menu-01 active" title="押出機料管和螺桿"></a></li>
-                        <li><a href="javascript:void(0);" class="product-btn menu-02" title="押出機料管和螺桿"></a></li>
-                        <li><a href="javascript:void(0);" class="product-btn menu-03" title="押出機料管和螺桿"></a></li>
-                    </ul>
-                </div>
-                <div class="col-right text-center">
-                    <ul class="product-list">
-                        <li><a href="assets/img/product-big/1-01.jpg" class="lightbox"><img src="assets/img/product/1-01.jpg" /><p>錐形雙螺桿和料管</p></a></li><li><a href="assets/img/product-big/1-02.jpg" class="lightbox"><img src="assets/img/product/1-02.jpg" /><p>各式押出螺桿</p></a></li><li><a href="assets/img/product-big/1-03.jpg" class="lightbox"><img src="assets/img/product/1-03.jpg" /><p>吹瓶機用螺桿和料管</p></a></li><li><a href="assets/img/product-big/1-04.jpg" class="lightbox"><img src="assets/img/product/1-04.jpg" /><p>廢料再生機用多段式螺桿料管</p></a></li><li><a href="assets/img/product-big/1-05.jpg" class="lightbox"><img src="assets/img/product/1-05.jpg" /><p>PVC異型雙螺桿和料管</p></a></li><li><a href="assets/img/product-big/1-06.jpg" class="lightbox"><img src="assets/img/product/1-06.jpg" /><p>錐形雙螺桿和料管</p></a></li><li><a href="assets/img/product-big/1-07.jpg" class="lightbox"><img src="assets/img/product/1-07.jpg" /><p>各式押出螺桿</p></a></li><li><a href="assets/img/product-big/1-08.jpg" class="lightbox"><img src="assets/img/product/1-08.jpg" /><p>吹瓶機用螺桿和料管</p></a></li><li><a href="assets/img/product-big/1-09.jpg" class="lightbox"><img src="assets/img/product/1-09.jpg" /><p>廢料再生機用多段式螺桿料管</p></a></li><li><a href="assets/img/product-big/1-10.jpg" class="lightbox"><img src="assets/img/product/1-10.jpg" /><p>PVC異型雙螺桿和料管</p></a></li><li><a href="assets/img/product-big/1-11.jpg" class="lightbox"><img src="assets/img/product/1-11.jpg" /><p>錐形雙螺桿和料管</p></a></li><li><a href="assets/img/product-big/1-12.jpg" class="lightbox"><img src="assets/img/product/1-12.jpg" /><p>各式押出螺桿</p></a></li><li><a href="assets/img/product-big/1-13.jpg" class="lightbox"><img src="assets/img/product/1-13.jpg" /><p>吹瓶機用螺桿和料管</p></a></li><li><a href="assets/img/product-big/1-14.jpg" class="lightbox"><img src="assets/img/product/1-14.jpg" /><p>廢料再生機用多段式螺桿料管</p></a></li><li><a href="assets/img/product-big/1-15.jpg" class="lightbox"><img src="assets/img/product/1-15.jpg" /><p>PVC異型雙螺桿和料管</p></a></li><li><a href="assets/img/product-big/1-16.jpg" class="lightbox"><img src="assets/img/product/1-16.jpg" /><p>錐形雙螺桿和料管</p></a></li><li><a href="assets/img/product-big/1-17.jpg" class="lightbox"><img src="assets/img/product/1-17.jpg" /><p>各式押出螺桿</p></a></li><li><a href="assets/img/product-big/1-18.jpg" class="lightbox"><img src="assets/img/product/1-18.jpg" /><p>吹瓶機用螺桿和料管</p></a></li>                    </ul>
-                </div>
-            </div>
-
+            </footer>
         </div>
-
-        <footer id="footer">
-            <div class="footer-bg"></div>
-            <div class="footer">
-                <div class="content">
-                    <div class="copyright">© 2015 Fuh Shing Machine Co., Ltd.  All rights reserved.</div>
-                    <ul class="footer-nav">
-                        <li><a href="index.html">HOME</a></li>
-                        <li>|</li>
-                        <li><a href="service.html">SERVICE</a></li>
-                        <li>|</li>
-                        <li><a href="product.html">PRODUCT</a></li>
-                        <li>|</li>
-                        <li><a href="process.html">PROCESS</a></li>
-                        <li>|</li>
-                        <li><a href="contact.html">CONTACT</a></li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
@@ -169,9 +199,26 @@
                     $("#lightbox").fadeOut();
                     $("#overlap").fadeOut();
                 });
+
+                $(".product-btn").click(function() {
+                    $(".product-btn").removeClass("active");
+                    $(this).addClass("active");
+                    var type = $(this).data("type");
+                    productMenu(type);
+                });
+
+                productMenu("type-1");
             });
+
+            function productMenu(type) {
+                $(".product-list li").hide();
+                $(".product-list").find("." + type).show();
+            }
         </script>
 
+        <script src="//unpkg.com/vue@2.1.8/dist/vue.js"></script>
+        <script src="assets/js/lang.js"></script>
+        <script src="assets/js/app.js"></script>
 
     </body>
 </html>
